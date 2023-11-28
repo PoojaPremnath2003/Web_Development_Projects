@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>CS Survey Form</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="cs_styles.css">
+</head>
+
+<div class="container">
+	<header>
+		<h1 id="title">Choosing B.Tech CSE as an Undergraduate Degree Course</h1>
+		<p id="description">Tell us why you'd like to pursue B.Tech Computer Science as your Undergraduate Degree Course.</p>
+	</header>
+
+	<div class="box">
+	<form id="survey-form">
+		<div class="form-group">
+			<label id="name-label" for="name"><b>Name</b></label>
+			<input
+				type="text"
+				name="name"
+				id="name"
+				class="form-box"
+				placeholder="Enter your name"
+				required
+			/>
+		</div>
+
+
+		<div class="form-group">
+			<label id="email-label" for="email"><b>Email</b></label>
+			<input
+				type="email"
+				name="email"
+				id="email"
+				class="form-box"
+				placeholder="Enter your email ID"
+				required
+			/>
+			
+		</div>
+
+		<div class="form-group">
+			<label id="number-label" for="age"><b>Age</b>(Optional)</label>
+			<input
+				type="number"
+				name="age"
+				id="age"
+				class="form-box"
+				min=15
+				max=100
+				placeholder="Age"
+			/>		
+		</div>
+
+
+		<div>
+		<div class="form-group">
+			<p>Which of the following best describes your current role?</p>
+			<select id="dropdown" class="form-box" required>
+				<option disable selected value>Select current role</option>
+				<option value="student">Student</option>
+				<option value="parent">Parent</option>
+				<option value="teacher">Teacher</option>
+				<option value="rather not say">Rather Not Say</option>
+			</select>
+		</div>
+
+		
+		<div class="form-group">
+			<p>Have you studied Computer Science in highschool?</p>
+			<label class="radio">
+				<input
+				name="studied cs"
+				value="yes"
+				type="radio"
+				class="input-radio"
+				checked
+				/>Yes
+			
+			</label>
+			<label class="radio">
+				<input
+				name="studied cs"
+				value="no"
+				type="radio"
+				class="input-radio"
+				/>No
+			
+			</label>	
+		</div>
+
+
+		<div class="form-group">
+		<p>What are topics you've enjoyed learning about in Computer Science? (Choose all that apply)</p>
+		<label class="checkbox">
+			<input
+				name="prefer"
+				value="programming"
+				type="checkbox"
+				class="input-checkbox"
+			/>Programming
+		</label>
+
+		<label class="checkbox">
+			<input
+				name="prefer"
+				value="front-end development"
+				type="checkbox"
+				class="input-checkbox"
+			/>
+			Front End Development</label>
+
+		<label class="checkbox">
+			<input
+				name="prefer"
+				value="databases"
+				type="checkbox"
+				class="input-checkbox"
+			/>Working with Databases</label>
+
+		<label class="checkbox">
+			<input
+				name="prefer"
+				value="cs at school"
+				type="checkbox"
+				class="input-checkbox"
+			/>I just enjoyed CS classes at school.</label>
+		</div>
+
+
+		<div class="form-group">
+			<p>Are you interested in a career in the field of Data Science/AI/Machine Learning?</p>
+			<label class="radio">
+				<input
+				name="career"
+				value="yes"
+				type="radio"
+				class="input-radio"
+				checked
+				/>Yes
+			</label>
+
+			<label class="radio">
+				<input
+				name="career"
+				value="no"
+				type="radio"
+				class="input-radio"
+				/>No
+			</label>
+
+			<label class="radio">
+				<input
+				name="career"
+				value="cannotsay"
+				type="radio"
+				class="input-radio"
+				/>Cannot Say Yet
+			</label>
+		</div>
+
+
+		<div class="form-group">
+			<p>Tell us other reasons why you'd like to pursue B.Tech CSE. </p>
+			<textarea
+				name="comments"
+				class="input-textarea">
+			</textarea>
+				
+		</div>
+		
+		<div class="form-group">
+			<button type="submit" id="submit" class="submit-button" onclick="window.location.href='submit.htm';">
+			Submit	
+			</button>
+		</div>
+	</form>
+	</div>
+</div>
+<footer>
+<p>Form created and designed by Pooja Premnath</p>
+</footer>
+</html>

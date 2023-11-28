@@ -1,0 +1,142 @@
+:root{
+	--almostblack: #1C1D21
+	--seagreen: #2CEAA3
+	--babyblue: #7CFEF0
+	--lavender: #BB9BB0
+	--almostwhite:#FFFAF0
+
+}
+
+*,
+*::before,
+*::after{
+	box-sizing:border-box;
+}
+
+
+
+body{
+	font-family:'Montserrat', sans-serif;
+	font-size: 20px;
+	line-height:2;
+	color: var(--almostblack);
+	margin:0 0 0 0;
+		
+}
+
+/*Set the parent to exhibit flex behaviour
+define the main axis, and align items*/
+.container{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	height=100%;
+	width=100%;
+  	background-image: linear-gradient(
+      	115deg,
+      	rgba(99,185,149, 0.8),
+      	rgba(173,238,227, 0.7)),
+    	url(cs2.jpg);
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
+	
+}
+
+
+/*Heading and Subheading
+------------------------------------*/
+h1{
+	color:#FFFAF0 ;
+	text-align: center;
+}
+
+#description{
+	color:#FFFAF0 ;
+	text-align:center;
+	font-size:15px;
+}
+
+/*Child of container-Creates a box within the flexbox*/
+.box{
+	background-color:#2CEAA3;
+	opacity:0.8;
+	width:70%;
+	border-radius:1%;
+	padding:40px;
+	
+}
+
+/*To style the parts of the form that have an input box*/	
+.form-box{
+	display:block;
+	height:40px;
+	font-family:'Montserrat', sans-serif;
+	font-size: 20px;
+	border-radius:1%;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+
+/*To style the text box that in which a para can be written*/
+.input-textarea{
+	width:100%;
+	padding:10px;
+	min-height:120px;
+	resize:vertical;
+	font-family:'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+
+/*Styling the submit button*/
+.submit-button{
+	width:90%;
+	height:60px;
+	background-color: #A288A6;
+	margin:20px;
+	color:black;
+	font-family:inherit;
+	font-size:inherit;
+}
+
+
+/*To set the radio button options one below the other*/
+.radio{
+	display:block;
+	margin-bottom: 15px;
+	font-size: 20px;
+	
+}
+
+
+/*To customize the size of the radio-buttons*/
+.input-radio{
+	display:inline-block;
+	height: 18px;
+	width: 18px;
+	
+}
+
+
+/*To style the checkbox options such that they are 
+one below the other*/
+.checkbox{
+	display:block;
+	line-height: 3;
+}
+
+
+/*To customize the size of the checkboxes*/
+.input-checkbox{
+	display:inline-block;
+	height: 20px;
+	width: 20px;
+}
+
+
+/*To make all the questions bold*/
+p{
+	font-weight:bold;
+}

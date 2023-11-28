@@ -1,0 +1,206 @@
+:root{
+	--aquamarine: #38E4AE;
+	--lightyellow: #FFF94F
+	--darkgrey: #466362;
+}
+	
+
+html{
+	box-sizing:border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+
+
+/* General
+----------------------------*/
+body{
+	font-family: 'Lato', sans-serif;
+	font-size:20px;
+	line-height:1.5;
+	--darkgrey;
+	margin:0;
+	padding:0;
+}
+
+
+/* Headings
+----------------------------------*/
+.heading {
+	background:#38E4AE;
+}
+h1{
+	font-size: 60px;
+	font-family:'Charm', cursive ;
+	--darkgrey;
+	text-align: center;
+	margin-top:0px;
+	margin-bottom: 0px;
+	
+}
+
+h2{
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	--darkgrey;
+	text-align: center;
+	margin-top:0;	
+}
+
+.top{
+	padding-top:80px;
+	line-height: 0px;
+}
+
+.bottom{
+	margin-bottom:60px;
+}
+
+
+#image{
+	max-width: 100%;
+	width:900px;
+	padding: 40px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid black;
+	
+}
+
+#img-caption{
+	text-align:center;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+
+h3{
+	font-size: 40px;
+	font-family: 'Charm', cursive;
+}
+
+
+/*About
+-------------------------------------*/
+
+#about{
+	background-image:url(pencil.jpg);
+	background-position: top-right;
+	background-size: cover;
+}
+
+.aboutheading{
+	margin-top: 0px;
+	text-align: center;
+	padding: 20px;
+}
+
+.logo{
+	width: 400px;
+	height: 420px;
+	padding: 20px;
+	margin-left: 60px;
+	margin-bottom: 30px;
+}
+
+.right{
+	float: right;
+	width: 750px;
+	padding-right:400px;
+	text-align: center;
+	margin-top: 80px;
+}
+
+
+
+/* Experiences
+------------------------------------------*/
+
+#experience{
+	background-image: url(stationery.jpg);
+	background-size: cover;
+	background-position: bottom left;
+	
+}
+
+#experience h3{
+	text-align:center;
+	margin-top:0;
+	padding: 40px;
+}
+
+#experience p{
+	width: 600px;
+	margin-left: 650px;
+	margin-bottom: 0px;
+	padding-bottom: 60px;
+	line-height:2;
+	
+}
+
+
+
+/* Timeline
+--------------------------------------*/
+#timeline {
+	background-image: url(blue_stationery.jpg);
+	background-size:cover;
+}
+
+#timeline h3{
+	margin-top:0;
+	text-align: center;
+	padding: 20px;
+}
+
+#timeline ul{
+	width: 750px;
+	text-align: left;
+	margin-left: 50px;
+	line-height:2;
+	padding-bottom: 20px;	
+	margin-bottom: 0px;
+}
+
+
+/*Footer
+-----------------------------*/
+footer{
+	background-color: var(--aquamarine);
+	padding: 60px;
+}
+
+footer p{
+	margin-top: 0px;
+	padding: 10px;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 0px;
+}
+
+#tribute-link:hover{
+	animation-name: width;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes width{
+	100%{
+		font-size: 2em;
+}
+}
+#tribute-link{
+	display: block;
+	text-align:center;
+	text-decoration:none;
+	font-size: 30px;
+	padding: 10px;
+	color: #EAF7FE;
+	
+}
+
+
+

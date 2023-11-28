@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Python Technical Documentation</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&family=STIX+Two+Text:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="python_style.css">
+</head>
+
+<body>
+
+	<nav id="navbar">
+		<header><h2>Python Documentation</h2></header>
+		<ul>
+			<li><a href="#Introduction_to_Python" class="nav-link">Introduction to Python</a></li>
+			<li><a href="#Popularity_of_Python" class="nav-link">Popularity of Python</a></li>
+			<li><a href="#Tokens" class="nav-link">Tokens</a></li>
+			<li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+			<li><a href="#Variable_Declaration" class="nav-link">Variable Declaration</a></li>
+			<li><a href="#Datatypes" class="nav-link">Datatypes</a></li>
+			<li><a href="#Mutability" class="nav-link">Mutability</a></li>
+			<li><a href="#Input_Statements" class="nav-link">Input Statements</a></li>
+			<li><a href="#Type_Conversion" class="nav-link">Type Conversion</a></li>
+			<li><a href="#If_Else_Statements" class="nav-link">If Else Statements</a></li>
+			<li><a href="#References" class="nav-link">References</a></li>
+			
+		</ul>
+	</nav>
+	<main id="main-doc">
+		<!--SECTION-->
+		<section class="main-section" id="Introduction_to_Python">
+			<header><h2>Introduction to Python</h2></header>
+				<p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. It was developed by Guido van Rossum in February 1991.
+				 Python is influenced by two programming languages: ABC language and Modula-3. </p>
+
+				<p>Its high-level built -in data structures, combined with dynamic typing and dynamic binding, makes it very attractive to use as a scripting or glue language to connect existing components together.
+				 Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. 
+				Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available without charge for all major platforms, and can be freely distributed.</p>
+		</section>
+
+		<!--SECTION-->
+		<section class="main-section" id="Popularity_of_Python">
+			<header><h2>Popularity of Python</h2></header>
+				<p>Python’s popularity is primarily because of its increased productivity. 
+				Since there is no compilation step, the edit-test-debug cycle is incredibly fast.
+				Debugging Python programs is easy: when the interpreter discovers an error, it raises an exception.
+				 A source level debugger allows inspection of local and global variables, evaluation of arbitrary expressions, setting breakpoints, stepping through the code a line at a time, and so on. </p>
+
+				<p>Python is also used to build professional-quality software, both as standalone applications and as web services.
+				 Python may not be the fastest language, but what it lacks in speed, it makes up for in versatility.
+				 Python is thus an ideal teaching language, and it lets newcomers pick it up quickly.
+				 As a result, developers spend more time thinking about the problem they’re trying to solve and less time thinking about language complexities.</p>
+		</section>
+
+
+		<!--SECTION-->
+		<section class="main-section" id="Tokens">
+			<header><h2>Tokens</h2></header>
+			<p>The smallest individual unit in a program is known as a token or a lexical unit. Python has the following tokens.</p>
+			<ol>
+				<li>Keywords</li>
+				<li>Identifiers</li>
+				<li>Literals</li>
+				<li>Operators</li>
+				<li>Punctuators</li>
+			</ol>
+				
+		</section>
+
+
+	
+		<!--SECTION-->
+		<section class="main-section" id="Hello_World">
+			<header><h2>Hello World</h2></header>
+			<p>Python, with its simple syntax, makes executing a print statement easier than ever. The syntax to print Hello World is as follows:</p>
+			<code class='code'>print("Hello World")</code>
+		</section>
+
+
+		<!--SECTION-->
+		<section class="main-section" id="Variable_Declaration">
+			<header><h2>Variable Declaration</h2></header>
+			<p>In Python, to create a variable, just assign to its name the value of appropriate type. For example, in order to create a variable
+			<b>Student</b> to hold a student's name, write the following statement.</p>
+
+			<code class='code'>Student="Pooja"</code>
+	
+			<p>To assign the age, in a variable <b>Age</b>, then:</p>
+			<code class='code'>age=18</code>
+		</section>
+
+		<!--SECTION-->
+		<section class="main-section" id="Datatypes">
+			<header><h2>Datatypes</h2></header>
+			<p>Python offers the following datatypes:</p>
+			<ul>
+				<li>Numbers (Integers, Floating point numbers, Complex numbers)</li>
+				<li>Strings</li>
+				<li>Lists</li>
+				<li>Tuples</li>
+				<li>Dictionaries</li>
+			</ul>
+		</section>
+
+
+		<!--SECTION-->
+		<section class="main-section" id="Mutability">
+			<header><h2>Mutability</h2></header>
+			<p>Python offers mutability to certain datatypes, namely, lists, dictionaries and sets. 
+			Mutability means that in the same memory address, a new value can be stored as and when one wants.
+			For example:</p>
+			
+			<code class='code'>lst=[1,2,4]
+			lst[2]=3 </code>
+			
+			<p>This changes the list as follows:</p>
+			<code class='code'>lst= [1,2,3]</code>
+		</section>
+
+
+
+		<!--SECTION-->
+		<section class="main-section" id="Input_Statements">
+			<header><h2>Input Statements</h2></header>
+			<p>In Python, user inputs can be taken using the input keyword. The syntax is as follows:</p>
+			<code>var= input("Enter your name")</code>
+			<p>By default, the input keyword takes a string as an input. In order to accept other datatypes
+			the value taken through the input function must by explicitly converted.</p>
+			<p>To accept a number, the syntax is as follows</p>
+			<code>var=int(input("Enter a number"))</code>
+			
+		</section>
+
+
+		<!--SECTION-->
+		<section class="main-section" id="Type_Conversion">
+			<header><h2>Type Conversion</h2></header>
+			<p>In Python, there are two types of conversion of datatypes. One is Implicit Type Conversion 
+			and the other is Explicit Type Conversion</p
+			
+				<h3>Implicit Type Conversion</h3>
+					<p>In Implicit Type Conversion, the Python interpreter automatically converts 	
+					the datatype. For example, in case of addition of an integer and a floating point number,
+					the resultant answer would have the datatype of float.</p>
+					<code class='code'>var=(2.5+3)</code>
+					<code class='code'>print(type(var))</code>
+					<p>This would result in:</p>
+					<code class='code'>float</code>
+
+				<h3>Explicit Type Conversion</h3>
+					<p>In Explicit Type Conversion, the programmer explicitly converts the datatype.</p>
+					<p>For Example:</p>				
+					<code class='code'>float(2)</code>
+					<p>This would lead to the integer 2 becoming a floating point number, that is, 2.0</p>
+		</section>
+
+
+
+		<!--SECTION-->
+		<section class="main-section" id="If_Else_Statements">
+			<header><h2>If Else Statements</h2></header>
+			<p>Conditional statements can be written with if else statements.</p>
+			<p>For example, to print hello world if var<3, and "Failed" otherwise, the conditional statement would be as follows:</p>
+			<code class='code'>if var<3:
+				<br>
+				print("Hello World")
+				<br>
+			      else:
+				<br>
+				print("Failed")</code>
+			<p>If the if condition is false, the interpreter moves to the else condition.</p>	      
+		</section>
+	
+		<!--SECTION-->
+		<section class="main-section" id="References">
+			<header><h2>References</h2>
+			<p>Content taken from Sumitha Arora's Computer Science for Class XII.</p>
+		</section>
+	
+	</main>
+</body>
+</html>

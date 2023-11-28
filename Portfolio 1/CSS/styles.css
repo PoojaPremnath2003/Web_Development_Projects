@@ -1,0 +1,129 @@
+/*
+sea green: #41CB7F
+dark grey: #466362
+sky blue:  #48BEFF
+lavender:  #CEA9F9
+baby blue: #A9DEF9
+dark blue: #032231
+almost white: #EAF7FE
+light pink: #F9A9A9
+*/
+
+/*Global Styles
+-------------------------------*/
+html{
+	box-sizing:border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+body{
+	color:#466362;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size:20px;
+	line-height:1.5;
+}
+img{
+	width:300px;}
+a{
+	color:#EAF7FE;
+	background:#032231;
+	padding:10px;
+	border-radius:10px;
+	text-decoration:none;
+}
+a:hover{
+	background:rgba(3,34,49,80%);
+}
+h2{
+	font-size:45px;
+}
+h1{
+	font-size:100px;
+	line-height:1;
+}
+h1,h2{
+	font-family:'Caveat', cursive;
+	margin:0;
+}
+.contentwrap{
+	max-width:900px;
+	margin:0 auto;
+	padding:60px;
+}
+/*Profile
+-------------------------------*/
+header{
+	background-image:url(palegreen.jpg);
+	background-size:cover;
+	/*background:#41CB7F;*/
+	text-align:center;
+	
+}
+
+/*Projects
+-------------------------------*/
+.project{
+	background:#A9DEF9;
+}
+.project-item{
+	overflow: hidden;
+	border-bottom: 3px dashed #032231;
+	padding: 25px 0;
+	
+}
+.project-item img {
+	float:left;
+	margin-right: 20px;
+	
+}
+.project-item h3{
+	margin-top:0px;
+}
+
+/*Education
+-------------------------------*/
+.ed{
+	background-image:url(pencil.jpg);
+	background-size:cover;
+	background-position: top right;
+}
+.ed p{
+	width:60%;
+}
+
+}
+.ed a{
+	color:#032231;
+	background:#F9A9A9;
+}
+.ed a:hover{
+	background:rgba(249,169,169,80%);
+}
+/*Achievements
+-------------------------------*/
+.achievements{
+	background:#CEA9F9;
+}
+.achievements h5{
+	font-style:italic;
+
+}
+.achievements{
+	line-height:3;}
+
+/*Contact Info
+-------------------------------*/
+.footer a{
+	display:block;
+
+}
+footer{
+	line-height:3;
+	background-image:url(mountain.jpg);
+	background-size:cover;
+	/*background-position: top right*/;
+	background-size:100% ;
+}

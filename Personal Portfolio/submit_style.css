@@ -1,0 +1,42 @@
+body{
+	margin: 0 auto 0 auto;
+}
+
+.container{
+	display:flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items:center;
+	height: 650px;
+	width=1000px;
+  	background-image: linear-gradient(
+      	115deg,
+      	rgba(99,185,149, 0.8),
+      	rgba(173,238,227, 0.7)),
+    	url(computerscience.jpg);
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
+	
+}
+
+.box{	
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	background-color:#2CEAA3;
+	opacity:0.8;
+	width:70%;
+	height:400px;
+	border-radius:4%;
+	padding:0px;
+	
+		
+}
+
+.message{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+}
+	
